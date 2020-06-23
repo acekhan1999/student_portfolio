@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>John Doe</title>
+</head>
+
+<body>
+    <section class="header">
+        <div class="navbar" id='nav'>
+            <ul>
+                <li>Home</li>
+                <li>About Me</li>
+                <li>Projects</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="quote">
+            <h1>“Websites promote you 24/7: No employee will do that.”<br/><span>― Paul Cookson</span></h1>
+        </div>
+    </section>
+    <section></section>
+    <script type="text/javascript">
+        var nav = document.getElementById('nav');
+
+        window.onscroll = function() {
+
+            if (window.pageYOffset > 100) {
+
+                nav.style.background = "rgba(0,0,0,0.5)";
+            } else {
+                nav.style.background = "transparent";
+            }
+        }
+    </script>
+</body>
+
+</html>
