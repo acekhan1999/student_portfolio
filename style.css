@@ -5,6 +5,15 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
 section {
     height: 100vh;
 }
@@ -53,9 +62,42 @@ section {
     border-bottom: 1px solid white;
 }
 
-.box {
-    width: 80%;
-    height: 2000px;
-    background: green;
-    margin: 20px auto;
+#about-me {
+    /* border: 1px solid red; */
+    position: relative;
+    margin-top: -7%;
+    display: flex;
+}
+
+.about-me h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    /* border: 1px solid red; */
+    margin-top: 5%;
+}
+
+.about-me p {
+    display: inline;
+    font-size: 20px;
+}
+
+.about-me-desc {
+    margin: 10%;
+}
+
+.about-me img {
+    width: 20%;
+    height: 65%;
+    /* border: 1px solid red; */
+    /* margin-left: 65%; */
+    /* margin-top: 5%; */
+    margin: 5%;
+    float: right;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.5s;
+}
+
+.about-me img:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.479);
 }
