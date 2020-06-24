@@ -123,6 +123,12 @@ section {
     margin-left: 25% !important;
     position: absolute;
     display: flex;
+    box-shadow: 10px 10px 36px -17px rgba(0, 0, 0, 0.75);
+    transition: 0.5s;
+}
+
+.card:hover {
+    box-shadow: 10px 10px 81px -17px rgba(0, 0, 0, 0.75);
 }
 
 .card-image {
