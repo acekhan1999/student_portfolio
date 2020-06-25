@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
 <html lang="en" dir="ltr">
 
 <head>
@@ -18,17 +17,17 @@
     <div class="sidebar">
         <header>John Doe</header>
         <ul>
-            <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
-            <li><a href="#"><i class="fas fa-user"></i>About Me</a></li>
+            <li><a href="#home"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="#about-me"><i class="fas fa-user"></i>About Me</a></li>
             <li><a href="#"><i class="fas fa-tasks"></i>Projects</a></li>
             <li><a href="#"><i class="fas fa-cogs"></i>Skills</a></li>
         </ul>
     </div>
 
-    <section class="home">
-        <div class="card">
-            <div class="card-image">
-                <div class="card-desc">
+    <section class="home" id="home">
+        <div class=" card ">
+            <div class="card-image ">
+                <div class="card-desc ">
                     <h1>John Doe</h1>
                     <ul>
                         <li>Developer</li>
@@ -37,6 +36,60 @@
             </div>
         </div>
     </section>
+    <section class="about-me " id="about-me">
+        <div class="about-me-container ">
+            <div class="about-me-desc ">
+                <h1>about me</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis asperiores qui ipsa, error sint voluptatem vel facere impedit, reprehenderit dolorem, magni unde ducimus repellat doloribus. Dolor qui sapiente nobis ut!</p>
+            </div>
+            <div class="about-me-skills ">
+                <ul>
+                    <li>Python</li>
+                    <li>
+                        <div class="python-progress-bar ">
+                            <span class="python-progress-bar-fill " style="width: 100%; "></span>
+                        </div>
+                    </li>
+                    <li>PyGame Zero</li>
+                    <li>
+                        <div class="pygame-zero-progress-bar ">
+                            <span class="pygame-zero-progress-bar-fill " style="width: 80%; "></span>
+                        </div>
+                    </li>
+                    <li>Web Developement</li>
+                    <li>
+                        <div class="web-dev-progress-bar ">
+                            <span class="web-dev-progress-bar-fill " style="width: 60%; "></span>
+                        </div>
+                    </li>
+                    <li>Flask Apps</li>
+                    <li>
+                        <div class="flask-progress-bar ">
+                            <span class="flask-progress-bar-fill " style="width: 10%; "></span>
+                        </div>
+                    </li>
+                    <li>Database Handling</li>
+                    <li>
+                        <div class="database-progress-bar ">
+                            <span class="database-progress-bar-fill " style="width: 5%; "></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 </body>
+
+<script>
+    var nav = document.getElementById('btn');
+
+    window.onscroll = function() {
+        if (window.pageYOffset > 590) {
+            nav.style.color = "black ";
+        } else {
+            nav.style.color = "white ";
+        }
+    }
+</script>
 
 </html>

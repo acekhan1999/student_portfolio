@@ -4,14 +4,21 @@
     margin: 0;
     list-style: none;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Nanum Gothic', sans-serif;
+    overflow-x: hidden;
 }
 
 section {
-    height: 100vh;
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    text-transform: capitalize;
 }
 
 .home {
@@ -26,6 +33,13 @@ section {
     height: 100%;
     transition: all .5s ease;
     background-color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    .sidebar {
+        width: 100% !important;
+        left: none;
+    }
 }
 
 .sidebar header {
@@ -77,6 +91,7 @@ label #btn {
     color: white;
     padding: 6px 12px;
     transition: all .5s;
+    position: fixed;
 }
 
 label #cancel {
@@ -87,6 +102,7 @@ label #cancel {
     color: white;
     padding: 4px 9px;
     transition: all .5s ease;
+    position: fixed;
 }
 
 #check:checked~.sidebar {
@@ -108,10 +124,10 @@ label #cancel {
 }
 
 section {
-    background: url(bg.jpeg) no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
+    width: 100%;
     transition: all .5s;
 }
 
@@ -143,4 +159,110 @@ section {
     margin: 25%;
     padding-left: 100%;
     width: 100%;
+}
+
+.about-me-container {
+    display: flex;
+    line-height: 30px;
+}
+
+.python-progress-bar {
+    width: 50%;
+    background-color: #e0e0e0;
+    padding: 3px;
+    border-radius: 15px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.python-progress-bar-fill {
+    display: block;
+    height: 22px;
+    background-color: #659cef;
+    border-radius: 10px;
+    transition: width 500ms ease-in-out;
+}
+
+.pygame-zero-progress-bar {
+    width: 50%;
+    background-color: #e0e0e0;
+    padding: 3px;
+    border-radius: 15px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.pygame-zero-progress-bar-fill {
+    display: block;
+    height: 22px;
+    background-color: #659cef;
+    border-radius: 10px;
+    transition: width 500ms ease-in-out;
+}
+
+.web-dev-progress-bar {
+    width: 50%;
+    background-color: #e0e0e0;
+    padding: 3px;
+    border-radius: 15px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.web-dev-progress-bar-fill {
+    display: block;
+    height: 22px;
+    background-color: #659cef;
+    border-radius: 10px;
+    transition: width 500ms ease-in-out;
+}
+
+.flask-progress-bar {
+    width: 50%;
+    background-color: #e0e0e0;
+    padding: 3px;
+    border-radius: 15px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.flask-progress-bar-fill {
+    display: block;
+    height: 22px;
+    background-color: #659cef;
+    border-radius: 10px;
+    transition: width 500ms ease-in-out;
+}
+
+.database-progress-bar {
+    width: 50%;
+    background-color: #e0e0e0;
+    padding: 3px;
+    border-radius: 15px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.database-progress-bar-fill {
+    display: block;
+    height: 22px;
+    background-color: #659cef;
+    border-radius: 10px;
+    transition: width 500ms ease-in-out;
+}
+
+.about-me-desc {
+    width: 50%;
+    float: left;
+    margin: 5%;
+}
+
+.about-me-desc h1 {
+    margin-bottom: 5%;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}
+
+.about-me-skills {
+    width: 50%;
+    margin: 5%;
+}
+
+.about-me {
+    margin: 5%;
 }
