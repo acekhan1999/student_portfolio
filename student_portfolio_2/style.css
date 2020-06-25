@@ -119,6 +119,23 @@ label #cancel {
     /* width: 230vh; */
 }
 
+.social-icons {
+    text-transform: none;
+    text-decoration: none;
+    margin-top: 15%;
+    position: relative;
+    font-size: 20px;
+}
+
+.social-icons a {
+    color: rgba(0, 0, 0, 0.301);
+    margin-right: 5%;
+}
+
+.social-icons a:hover {
+    color: rgba(0, 0, 0, 0.664);
+}
+
 section {
     background-position: center;
     background-size: cover;
