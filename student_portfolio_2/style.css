@@ -114,10 +114,10 @@ label #cancel {
     left: 195px;
 }
 
-
-/* #check:checked~section {
+#check:checked~section {
     margin-left: 250px;
-}  */
+    /* width: 230vh; */
+}
 
 section {
     background-position: center;
@@ -133,7 +133,7 @@ section {
     height: 50%;
     width: 50%;
     margin: 10%;
-    margin-left: 25% !important;
+    margin-left: 25%;
     position: absolute;
     display: flex;
     box-shadow: 10px 10px 36px -17px rgba(0, 0, 0, 0.75);
@@ -155,6 +155,7 @@ section {
 .card-desc {
     margin: 25%;
     padding-left: 100%;
+    padding-right: 0;
     width: 100%;
 }
 
