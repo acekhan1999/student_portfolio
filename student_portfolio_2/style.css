@@ -143,7 +143,7 @@ section {
     background-size: cover;
     height: 100vh;
     width: 230vh;
-    /* width: 100%; */
+    width: 100%;
     transition: all .5s;
 }
 
