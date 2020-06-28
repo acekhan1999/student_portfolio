@@ -18,14 +18,14 @@
     <div class="sidebar">
         <div class="sidebar-content">
             <header>John Doe</header>
-            <ul>
-                <label for="icons">
+            <div id="icons">
+                <ul>
                     <li><a id="home-icon" href="#home"><i class="fa fa-home" ></i>Home</a></li>
                     <li><a id="user-icon" href="#about-me"><i class="fa fa-user" ></i>About Me</a></li>
                     <li><a id="tasks-icon" href="#projects"><i class="fa fa-tasks" ></i>Projects</a></li>
-                </label>
-                <!-- <li><a href="#"><i class="fa fa-cogs"></i>Skills</a></li> -->
-            </ul>
+                    <!-- <li><a href="#"><i class="fa fa-cogs"></i>Skills</a></li> -->
+                </ul>
+            </div>
         </div>
     </div>
 
@@ -130,7 +130,7 @@
     var nav = document.getElementById('btn');
 
     window.onscroll = function() {
-        if (window.pageYOffset > 590) {
+        if (window.pageYOffset > 510) {
             nav.style.color = "black ";
         } else {
             nav.style.color = "white ";
