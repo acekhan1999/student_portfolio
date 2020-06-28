@@ -513,6 +513,79 @@ section {
     }
 }
 
+@media screen and (device-width: 1080px) and (device-height: 2340px) and (-webkit-device-pixel-ratio: 3) {
+    .projects-card {
+        width: 100%;
+    }
+    .sidebar {
+        z-index: 1;
+        /* width: 100%; */
+    }
+    #check:checked~.sidebar {
+        width: 100%;
+    }
+    #check:checked~.sidebar header {
+        margin-top: 5%;
+        font-size: 50px;
+    }
+    #check:checked~.sidebar ul {
+        margin: 15%;
+    }
+    #check:checked~.sidebar ul li a {
+        font-size: 50px;
+        margin: 25%;
+    }
+    #check:checked~.sidebar ul li a i {
+        padding-right: 5%;
+    }
+    label #cancel {
+        font-size: 90px;
+        padding-left: 65%;
+        margin-top: 2.5%;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s 2s, opacity 0.5s;
+    }
+    label #btn {
+        font-size: 100px;
+        transition: 0.5s;
+    }
+    #check:checked~label #btn {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 2s linear;
+    }
+    #check:checked~label #cancel {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 2s linear;
+        /* padding-left: -65%; */
+    }
+    #check:checked~label #cancel {
+        padding-left: -65%;
+    }
+    #home-icon:checked~.sidebar {
+        visibility: hidden;
+        width: 0%;
+    }
+    .card {
+        width: 100%;
+        margin: 0%;
+        margin-top: 25%;
+    }
+    .card-desc {
+        font-size: 40px;
+        width: 335px;
+    }
+    .social-icons {
+        font-size: 50px;
+    }
+    #check:checked~section {
+        margin-left: 0;
+        /* width: 230vh; */
+    }
+}
+
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
     .projects-card {
         width: 100%;
