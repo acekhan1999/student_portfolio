@@ -55,7 +55,7 @@ h1 {
     transition: .4s;
 }
 
-ul li:hover a {
+.sidebar ul li:hover a {
     padding-left: 50px;
 }
 
@@ -420,6 +420,47 @@ section {
     letter-spacing: 1px;
     /* border-bottom: 2px solid white; */
     animation: text-letter-spacing 1s;
+}
+
+footer {
+    height: 100vh;
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-flow: wrap;
+    /* margin: 5%; */
+    color: white;
+    text-align: left;
+}
+
+.footer-content {
+    margin: 5%;
+}
+
+.footer-content li {
+    margin-top: 5%;
+}
+
+.footer-content li img {
+    width: 350px;
+    height: 150px;
+}
+
+.footer-content li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.footer-content li span {
+    font-size: 30px;
+    margin-right: 5%;
+}
+
+.footer-content li a:hover {
+    color: rgb(105, 105, 105);
+    text-decoration: underline;
 }
 
 @keyframes text-letter-spacing {
@@ -989,6 +1030,11 @@ section {
     #check:checked~section {
         margin-left: 0;
         /* width: 230vh; */
+    }
+    footer {
+        font-size: 40px;
+        height: 50vh;
+        margin-bottom: -5%;
     }
 }
 
