@@ -278,6 +278,10 @@ section {
     margin-bottom: -10%;
 }
 
+.projects {
+    margin-bottom: 2.5%;
+}
+
 .projects h1 {
     text-transform: uppercase;
     letter-spacing: 2.5px;
