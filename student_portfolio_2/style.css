@@ -617,6 +617,43 @@ footer {
         margin-left: 0;
         /* width: 230vh; */
     }
+    footer {
+        font-size: 40px;
+        height: 50vh;
+        margin-bottom: -5%;
+    }
+    .projects-card-wild-cats h1 {
+        font-size: 75px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 20%;
+        color: white;
+    }
+    .projects-card-moon h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .projects-card-birthday h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .projects-card-word h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
 }
 
 @media only screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 3) {
@@ -755,6 +792,43 @@ footer {
         margin-left: 0;
         /* width: 230vh; */
     }
+    footer {
+        font-size: 40px;
+        height: 50vh;
+        margin-bottom: -5%;
+    }
+    .projects-card-wild-cats h1 {
+        font-size: 75px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 20%;
+        color: white;
+    }
+    .projects-card-moon h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .projects-card-birthday h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .projects-card-word h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
 }
 
 @media only screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
@@ -892,6 +966,43 @@ footer {
     #check:checked~section {
         margin-left: 0;
         /* width: 230vh; */
+    }
+    footer {
+        font-size: 40px;
+        height: 50vh;
+        margin-bottom: -5%;
+    }
+    .projects-card-wild-cats h1 {
+        font-size: 75px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 20%;
+        color: white;
+    }
+    .projects-card-moon h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .projects-card-birthday h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .projects-card-word h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
     }
 }
 
@@ -1036,6 +1147,38 @@ footer {
         height: 50vh;
         margin-bottom: -5%;
     }
+    .projects-card-wild-cats h1 {
+        font-size: 75px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 20%;
+        color: white;
+    }
+    .projects-card-moon h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .projects-card-birthday h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .projects-card-word h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
 }
 
 @media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 3) {
@@ -1173,6 +1316,43 @@ footer {
     #check:checked~section {
         margin-left: 0;
         /* width: 230vh; */
+    }
+    footer {
+        font-size: 40px;
+        height: 50vh;
+        margin-bottom: -5%;
+    }
+    .projects-card-wild-cats h1 {
+        font-size: 75px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 20%;
+        color: white;
+    }
+    .projects-card-moon h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .projects-card-birthday h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .projects-card-word h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
     }
 }
 
@@ -1312,6 +1492,43 @@ footer {
         margin-left: 0;
         /* width: 230vh; */
     }
+    footer {
+        font-size: 40px;
+        height: 50vh;
+        margin-bottom: -5%;
+    }
+    .projects-card-wild-cats h1 {
+        font-size: 75px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 20%;
+        color: white;
+    }
+    .projects-card-moon h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .projects-card-birthday h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .projects-card-word h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
 }
 
 @media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
@@ -1450,6 +1667,43 @@ footer {
         margin-left: 0;
         /* width: 230vh; */
     }
+    footer {
+        font-size: 40px;
+        height: 50vh;
+        margin-bottom: -5%;
+    }
+    .projects-card-wild-cats h1 {
+        font-size: 75px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 20%;
+        color: white;
+    }
+    .projects-card-moon h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .projects-card-birthday h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .projects-card-word h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
 }
 
 @media only screen and (device-width: 480px) and (device-height: 800px) and (-webkit-device-pixel-ratio: 3) {
@@ -1587,5 +1841,42 @@ footer {
     #check:checked~section {
         margin-left: 0;
         /* width: 230vh; */
+    }
+    footer {
+        font-size: 40px;
+        height: 50vh;
+        margin-bottom: -5%;
+    }
+    .projects-card-wild-cats h1 {
+        font-size: 75px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 20%;
+        color: white;
+    }
+    .projects-card-moon h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .projects-card-birthday h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .projects-card-word h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
     }
 }
