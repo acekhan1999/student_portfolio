@@ -1,0 +1,2148 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    /* overflow-x: hidden; */
+}
+
+h1 {
+    text-transform: capitalize;
+}
+
+.home {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(16, 81, 158, 1) 35%, rgba(0, 212, 255, 1) 82%);
+}
+
+.sidebar {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    /* width: 100%; */
+    height: 100%;
+    transition: all .5s ease;
+    background-color: black;
+}
+
+.sidebar header {
+    font-size: 22px;
+    color: white;
+    line-height: 70px;
+    text-align: center;
+    background: black;
+    user-select: none;
+}
+
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 15px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    /* border-bottom: 1px solid black; */
+    /* border-top: 1px solid rgba(255, 255, 255, .1); */
+    transition: .4s;
+}
+
+.sidebar ul li:hover a {
+    padding-left: 50px;
+}
+
+.sidebar ul a i {
+    margin-right: 16px;
+}
+
+.sidebar ul a img {
+    width: 150px;
+    height: 65px;
+    padding-top: 50%;
+}
+
+#check {
+    display: none;
+}
+
+label #btn,
+label #cancel {
+    position: absolute;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+label #btn {
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+    position: fixed;
+}
+
+label #cancel {
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: white;
+    padding: 4px 9px;
+    transition: all .5s ease;
+    position: fixed;
+}
+
+#check:checked~.sidebar {
+    left: 0;
+}
+
+#check:checked~label #btn {
+    /* left: 250px; */
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked~label #cancel {
+    left: 195px;
+}
+
+#check:checked~section {
+    margin-left: 250px;
+    /* width: 230vh; */
+}
+
+.social-icons {
+    text-transform: none;
+    text-decoration: none;
+    margin-top: 15%;
+    position: relative;
+    font-size: 20px;
+}
+
+.social-icons a {
+    color: rgba(0, 0, 0, 0.301);
+    margin-right: 5%;
+    transition: 0.5s;
+}
+
+.social-icons a:hover {
+    color: rgba(0, 0, 0, 0.664);
+}
+
+section {
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    /* width: 400vh; */
+    transition: all .5s;
+}
+
+.card {
+    background-color: white;
+    height: 50%;
+    width: 50%;
+    margin: 10%;
+    margin-left: 25%;
+    position: absolute;
+    display: flex;
+    box-shadow: 10px 10px 36px -17px rgba(0, 0, 0, 0.75);
+    transition: 0.5s;
+}
+
+.card:hover {
+    box-shadow: 10px 10px 81px -17px rgba(0, 0, 0, 0.75);
+}
+
+.card-image {
+    /* border: 1px solid red; */
+    background-image: url('https://thumbs.dreamstime.com/b/business-man-profile-icon-male-avatar-hipster-style-fashion-cartoon-guy-beard-portrait-casual-businessman-person-face-flat-design-69046219.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+
+.card-desc {
+    margin: 25%;
+    padding-left: 100%;
+    padding-right: 0;
+    width: 50%;
+}
+
+.about-me-container {
+    display: flex;
+    line-height: 30px;
+}
+
+.python-progress-bar {
+    width: 50%;
+    background-color: #e0e0e0;
+    padding: 3px;
+    border-radius: 15px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.python-progress-bar-fill {
+    display: block;
+    height: 22px;
+    background-color: #659cef;
+    border-radius: 10px;
+    transition: width 500ms ease-in-out;
+}
+
+.pygame-zero-progress-bar {
+    width: 50%;
+    background-color: #e0e0e0;
+    padding: 3px;
+    border-radius: 15px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.pygame-zero-progress-bar-fill {
+    display: block;
+    height: 22px;
+    background-color: #659cef;
+    border-radius: 10px;
+    transition: width 500ms ease-in-out;
+}
+
+.web-dev-progress-bar {
+    width: 50%;
+    background-color: #e0e0e0;
+    padding: 3px;
+    border-radius: 15px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.web-dev-progress-bar-fill {
+    display: block;
+    height: 22px;
+    background-color: #659cef;
+    border-radius: 10px;
+    transition: width 500ms ease-in-out;
+}
+
+.flask-progress-bar {
+    width: 50%;
+    background-color: #e0e0e0;
+    padding: 3px;
+    border-radius: 15px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.flask-progress-bar-fill {
+    display: block;
+    height: 22px;
+    background-color: #659cef;
+    border-radius: 10px;
+    transition: width 500ms ease-in-out;
+}
+
+.database-progress-bar {
+    width: 50%;
+    background-color: #e0e0e0;
+    padding: 3px;
+    border-radius: 15px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.database-progress-bar-fill {
+    display: block;
+    height: 22px;
+    background-color: #659cef;
+    border-radius: 10px;
+    transition: width 500ms ease-in-out;
+}
+
+.about-me-desc {
+    width: 50%;
+    float: left;
+    margin: 5%;
+}
+
+.about-me-desc h1 {
+    margin-bottom: 5%;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}
+
+.about-me-skills {
+    width: 50%;
+    margin: 5%;
+}
+
+.about-me {
+    margin: 5%;
+    margin-bottom: -10%;
+}
+
+.projects {
+    margin-bottom: 2.5%;
+}
+
+.projects h1 {
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    /* text-align: center; */
+    margin-left: 7%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    margin: 5%;
+}
+
+.projects-card {
+    width: 20%;
+    height: 300px;
+    background-color: yellow;
+    box-sizing: border-box;
+    /* font-size: 60px; */
+    font-family: 'Anton', sans-serif;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    box-shadow: 10px 10px 36px -17px rgba(0, 0, 0, 0.75);
+    transition: 4s;
+}
+
+.projects-card-wild-cats {
+    background-image: url('https://wallpaperaccess.com/full/1695114.jpg');
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 100%;
+    transition: 4s;
+}
+
+.projects-card-wild-cats h1 {
+    font-size: 50px !important;
+    visibility: hidden;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.projects-card-wild-cats:hover {
+    background-position: center;
+}
+
+.projects-card-wild-cats:hover h1 {
+    visibility: visible;
+    font-size: 25px;
+    padding-top: 50%;
+    color: white;
+    letter-spacing: 1px;
+    /* border-bottom: 2px solid white; */
+    animation: text-letter-spacing 1s;
+}
+
+.projects-card-moon {
+    background-image: url('https://wallpapercave.com/wp/wp4557600.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    transition: 4s;
+}
+
+.projects-card-moon h1 {
+    font-size: 30px !important;
+    visibility: hidden;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.projects-card-moon:hover {
+    background-size: 300%;
+}
+
+.projects-card-moon:hover h1 {
+    visibility: visible;
+    font-size: 25px;
+    padding-top: 50%;
+    color: white;
+    letter-spacing: 1px;
+    /* border-bottom: 2px solid white; */
+    animation: text-letter-spacing 1s;
+}
+
+.projects-card-birthday {
+    background-image: url('data:image/png;base64,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');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    transition: 4s;
+}
+
+.projects-card-birthday h1 {
+    font-size: 30px !important;
+    visibility: hidden;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.projects-card-birthday:hover h1 {
+    visibility: visible;
+    font-size: 25px;
+    padding-top: 50%;
+    color: white;
+    letter-spacing: 1px;
+    /* border-bottom: 2px solid white; */
+    animation: text-letter-spacing 1s;
+}
+
+.projects-card-word {
+    background-image: url('https://st2.depositphotos.com/1371034/10014/v/450/depositphotos_100142054-stock-illustration-abstract-seamless-pattern-with-colorful.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    transition: 4s;
+}
+
+.projects-card-word:hover {
+    background-size: 200%;
+}
+
+.projects-card-word h1 {
+    font-size: 35px !important;
+    visibility: hidden;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.projects-card-word:hover h1 {
+    visibility: visible;
+    font-size: 25px;
+    padding-top: 50%;
+    color: white;
+    letter-spacing: 1px;
+    /* border-bottom: 2px solid white; */
+    animation: text-letter-spacing 1s;
+}
+
+footer {
+    height: 100vh;
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-flow: wrap;
+    /* margin: 5%; */
+    color: white;
+    text-align: left;
+}
+
+.footer-content {
+    margin: 5%;
+}
+
+.footer-content li {
+    margin-top: 5%;
+}
+
+.footer-content li img {
+    width: 350px;
+    height: 150px;
+}
+
+.footer-content li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.footer-content li span {
+    font-size: 30px;
+    margin-right: 5%;
+}
+
+.footer-content li a:hover {
+    color: rgb(105, 105, 105);
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    .projects h1 {
+        font-size: 75px;
+    }
+    .projects-card {
+        width: 100%;
+        margin: 5%;
+    }
+    .python-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .python-progress-bar-fill {
+        height: 45px;
+    }
+    .pygame-zero-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .pygame-zero-progress-bar-fill {
+        height: 45px;
+    }
+    .web-dev-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .web-dev-progress-bar-fill {
+        height: 45px;
+    }
+    .flask-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .flask-progress-bar-fill {
+        height: 45px;
+    }
+    .database-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .database-progress-bar-fill {
+        height: 45px;
+    }
+    .about-me-container {
+        display: flex;
+        line-height: 50px;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-flow: wrap;
+    }
+    .about-me-container h1 {
+        font-size: 75px;
+    }
+    .about-me-desc {
+        width: 100%;
+        font-size: 40px;
+    }
+    .about-me-skills {
+        width: 100%;
+        font-size: 40px;
+        font-weight: bolder;
+    }
+    .sidebar {
+        z-index: 1;
+        /* width: 100%; */
+    }
+    #check:checked~.sidebar {
+        width: 75%;
+    }
+    #check:checked~.sidebar header {
+        margin-top: 7.5%;
+        font-size: 50px;
+    }
+    #check:checked~.sidebar ul {
+        margin: 5%;
+    }
+    #check:checked~.sidebar ul li a {
+        font-size: 50px;
+        margin: 25%;
+    }
+    #check:checked~.sidebar ul li a i {
+        padding-right: 5%;
+    }
+    label #cancel {
+        font-size: 90px;
+        padding-left: 40%;
+        margin-top: 2.5%;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s 2s, opacity 0.5s;
+    }
+    label #btn {
+        font-size: 100px;
+        transition: 0.5s;
+    }
+    label #btn {
+        z-index: 1;
+    }
+    #icons:checked~.sidebar {
+        width: 0%;
+        display: none;
+    }
+    #check:checked~label #btn {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 2s linear;
+    }
+    #check:checked~label #cancel {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 2s linear;
+        /* padding-left: -65%; */
+    }
+    #check:checked~label #cancel {
+        padding-left: -65%;
+    }
+    #home-icon:checked~.sidebar {
+        visibility: hidden;
+        width: 0%;
+    }
+    .card {
+        width: 100%;
+        margin: 0%;
+        margin-top: 25%;
+    }
+    .card-desc {
+        font-size: 40px;
+        width: 335px;
+    }
+    .social-icons {
+        font-size: 50px;
+    }
+    #check:checked~section {
+        margin-left: 0;
+        /* width: 230vh; */
+    }
+    footer {
+        font-size: 40px;
+        height: 50vh;
+        margin-bottom: -5%;
+    }
+    .projects-card-wild-cats h1 {
+        font-size: 75px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 20%;
+        color: white;
+    }
+    .projects-card-moon h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .projects-card-birthday h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .projects-card-word h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .sidebar ul a img {
+        width: 350px;
+        height: 135px;
+        visibility: hidden;
+        /* padding-top: 50%; */
+    }
+    #check:checked~.sidebar ul a img {
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .projects-card {
+        width: 40%;
+    }
+}
+
+@media only screen and (device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 3) {
+    .projects h1 {
+        font-size: 75px;
+    }
+    .projects-card {
+        width: 100%;
+        margin: 5%;
+    }
+    .python-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .python-progress-bar-fill {
+        height: 45px;
+    }
+    .pygame-zero-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .pygame-zero-progress-bar-fill {
+        height: 45px;
+    }
+    .web-dev-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .web-dev-progress-bar-fill {
+        height: 45px;
+    }
+    .flask-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .flask-progress-bar-fill {
+        height: 45px;
+    }
+    .database-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .database-progress-bar-fill {
+        height: 45px;
+    }
+    .about-me-container {
+        display: flex;
+        line-height: 50px;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-flow: wrap;
+    }
+    .about-me-container h1 {
+        font-size: 75px;
+    }
+    .about-me-desc {
+        width: 100%;
+        font-size: 40px;
+    }
+    .about-me-skills {
+        width: 100%;
+        font-size: 40px;
+        font-weight: bolder;
+    }
+    .sidebar {
+        z-index: 1;
+        /* width: 100%; */
+    }
+    #check:checked~.sidebar {
+        width: 75%;
+    }
+    #check:checked~.sidebar header {
+        margin-top: 7.5%;
+        font-size: 50px;
+    }
+    #check:checked~.sidebar ul {
+        margin: 5%;
+    }
+    #check:checked~.sidebar ul li a {
+        font-size: 50px;
+        margin: 25%;
+    }
+    #check:checked~.sidebar ul li a i {
+        padding-right: 5%;
+    }
+    label #cancel {
+        font-size: 90px;
+        padding-left: 40%;
+        margin-top: 2.5%;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s 2s, opacity 0.5s;
+    }
+    label #btn {
+        font-size: 100px;
+        transition: 0.5s;
+    }
+    label #btn {
+        z-index: 1;
+    }
+    #icons:checked~.sidebar {
+        width: 0%;
+        display: none;
+    }
+    #check:checked~label #btn {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 2s linear;
+    }
+    #check:checked~label #cancel {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 2s linear;
+        /* padding-left: -65%; */
+    }
+    #check:checked~label #cancel {
+        padding-left: -65%;
+    }
+    #home-icon:checked~.sidebar {
+        visibility: hidden;
+        width: 0%;
+    }
+    .card {
+        width: 100%;
+        margin: 0%;
+        margin-top: 25%;
+    }
+    .card-desc {
+        font-size: 40px;
+        width: 335px;
+    }
+    .social-icons {
+        font-size: 50px;
+    }
+    #check:checked~section {
+        margin-left: 0;
+        /* width: 230vh; */
+    }
+    footer {
+        font-size: 40px;
+        height: 50vh;
+        margin-bottom: -5%;
+    }
+    .projects-card-wild-cats h1 {
+        font-size: 75px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 20%;
+        color: white;
+    }
+    .projects-card-moon h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .projects-card-birthday h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .projects-card-word h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .sidebar ul a img {
+        width: 350px;
+        height: 135px;
+        visibility: hidden;
+        /* padding-top: 50%; */
+    }
+    #check:checked~.sidebar ul a img {
+        visibility: visible;
+    }
+}
+
+@media only screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 3) {
+    .projects h1 {
+        font-size: 75px;
+    }
+    .projects-card {
+        width: 100%;
+        margin: 5%;
+    }
+    .python-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .python-progress-bar-fill {
+        height: 45px;
+    }
+    .pygame-zero-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .pygame-zero-progress-bar-fill {
+        height: 45px;
+    }
+    .web-dev-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .web-dev-progress-bar-fill {
+        height: 45px;
+    }
+    .flask-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .flask-progress-bar-fill {
+        height: 45px;
+    }
+    .database-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .database-progress-bar-fill {
+        height: 45px;
+    }
+    .about-me-container {
+        display: flex;
+        line-height: 50px;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-flow: wrap;
+    }
+    .about-me-container h1 {
+        font-size: 75px;
+    }
+    .about-me-desc {
+        width: 100%;
+        font-size: 40px;
+    }
+    .about-me-skills {
+        width: 100%;
+        font-size: 40px;
+        font-weight: bolder;
+    }
+    .sidebar {
+        z-index: 1;
+        /* width: 100%; */
+    }
+    #check:checked~.sidebar {
+        width: 75%;
+    }
+    #check:checked~.sidebar header {
+        margin-top: 7.5%;
+        font-size: 50px;
+    }
+    #check:checked~.sidebar ul {
+        margin: 5%;
+    }
+    #check:checked~.sidebar ul li a {
+        font-size: 50px;
+        margin: 25%;
+    }
+    #check:checked~.sidebar ul li a i {
+        padding-right: 5%;
+    }
+    label #cancel {
+        font-size: 90px;
+        padding-left: 40%;
+        margin-top: 2.5%;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s 2s, opacity 0.5s;
+    }
+    label #btn {
+        font-size: 100px;
+        transition: 0.5s;
+    }
+    label #btn {
+        z-index: 1;
+    }
+    #icons:checked~.sidebar {
+        width: 0%;
+        display: none;
+    }
+    #check:checked~label #btn {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 2s linear;
+    }
+    #check:checked~label #cancel {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 2s linear;
+        /* padding-left: -65%; */
+    }
+    #check:checked~label #cancel {
+        padding-left: -65%;
+    }
+    #home-icon:checked~.sidebar {
+        visibility: hidden;
+        width: 0%;
+    }
+    .card {
+        width: 100%;
+        margin: 0%;
+        margin-top: 25%;
+    }
+    .card-desc {
+        font-size: 40px;
+        width: 335px;
+    }
+    .social-icons {
+        font-size: 50px;
+    }
+    #check:checked~section {
+        margin-left: 0;
+        /* width: 230vh; */
+    }
+    footer {
+        font-size: 40px;
+        height: 50vh;
+        margin-bottom: -5%;
+    }
+    .projects-card-wild-cats h1 {
+        font-size: 75px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 20%;
+        color: white;
+    }
+    .projects-card-moon h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .projects-card-birthday h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .projects-card-word h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .sidebar ul a img {
+        width: 350px;
+        height: 135px;
+        visibility: hidden;
+        /* padding-top: 50%; */
+    }
+    #check:checked~.sidebar ul a img {
+        visibility: visible;
+    }
+}
+
+@media only screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+    .projects h1 {
+        font-size: 75px;
+    }
+    .projects-card {
+        width: 100%;
+        margin: 5%;
+    }
+    .python-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .python-progress-bar-fill {
+        height: 45px;
+    }
+    .pygame-zero-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .pygame-zero-progress-bar-fill {
+        height: 45px;
+    }
+    .web-dev-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .web-dev-progress-bar-fill {
+        height: 45px;
+    }
+    .flask-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .flask-progress-bar-fill {
+        height: 45px;
+    }
+    .database-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .database-progress-bar-fill {
+        height: 45px;
+    }
+    .about-me-container {
+        display: flex;
+        line-height: 50px;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-flow: wrap;
+    }
+    .about-me-container h1 {
+        font-size: 75px;
+    }
+    .about-me-desc {
+        width: 100%;
+        font-size: 40px;
+    }
+    .about-me-skills {
+        width: 100%;
+        font-size: 40px;
+        font-weight: bolder;
+    }
+    .sidebar {
+        z-index: 1;
+        /* width: 100%; */
+    }
+    #check:checked~.sidebar {
+        width: 75%;
+    }
+    #check:checked~.sidebar header {
+        margin-top: 7.5%;
+        font-size: 50px;
+    }
+    #check:checked~.sidebar ul {
+        margin: 5%;
+    }
+    #check:checked~.sidebar ul li a {
+        font-size: 50px;
+        margin: 25%;
+    }
+    #check:checked~.sidebar ul li a i {
+        padding-right: 5%;
+    }
+    label #cancel {
+        font-size: 90px;
+        padding-left: 40%;
+        margin-top: 2.5%;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s 2s, opacity 0.5s;
+    }
+    label #btn {
+        font-size: 100px;
+        transition: 0.5s;
+    }
+    label #btn {
+        z-index: 1;
+    }
+    #icons:checked~.sidebar {
+        width: 0%;
+        display: none;
+    }
+    #check:checked~label #btn {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 2s linear;
+    }
+    #check:checked~label #cancel {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 2s linear;
+        /* padding-left: -65%; */
+    }
+    #check:checked~label #cancel {
+        padding-left: -65%;
+    }
+    #home-icon:checked~.sidebar {
+        visibility: hidden;
+        width: 0%;
+    }
+    .card {
+        width: 100%;
+        margin: 0%;
+        margin-top: 25%;
+    }
+    .card-desc {
+        font-size: 40px;
+        width: 335px;
+    }
+    .social-icons {
+        font-size: 50px;
+    }
+    #check:checked~section {
+        margin-left: 0;
+        /* width: 230vh; */
+    }
+    footer {
+        font-size: 40px;
+        height: 50vh;
+        margin-bottom: -5%;
+    }
+    .projects-card-wild-cats h1 {
+        font-size: 75px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 20%;
+        color: white;
+    }
+    .projects-card-moon h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .projects-card-birthday h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .projects-card-word h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .sidebar ul a img {
+        width: 350px;
+        height: 135px;
+        visibility: hidden;
+        /* padding-top: 50%; */
+    }
+    #check:checked~.sidebar ul a img {
+        visibility: visible;
+    }
+}
+
+@media only screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+    .projects h1 {
+        font-size: 75px;
+    }
+    .projects-card {
+        width: 100%;
+        margin: 5%;
+    }
+    .python-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .python-progress-bar-fill {
+        height: 45px;
+    }
+    .pygame-zero-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .pygame-zero-progress-bar-fill {
+        height: 45px;
+    }
+    .web-dev-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .web-dev-progress-bar-fill {
+        height: 45px;
+    }
+    .flask-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .flask-progress-bar-fill {
+        height: 45px;
+    }
+    .database-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .database-progress-bar-fill {
+        height: 45px;
+    }
+    .about-me-container {
+        display: flex;
+        line-height: 50px;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-flow: wrap;
+    }
+    .about-me-container h1 {
+        font-size: 75px;
+    }
+    .about-me-desc {
+        width: 100%;
+        font-size: 40px;
+    }
+    .about-me-skills {
+        width: 100%;
+        font-size: 40px;
+        font-weight: bolder;
+    }
+    .sidebar {
+        z-index: 1;
+        /* width: 100%; */
+    }
+    #check:checked~.sidebar {
+        width: 75%;
+    }
+    #check:checked~.sidebar header {
+        margin-top: 7.5%;
+        font-size: 50px;
+    }
+    #check:checked~.sidebar ul {
+        margin: 5%;
+    }
+    #check:checked~.sidebar ul li a {
+        font-size: 50px;
+        margin: 25%;
+    }
+    #check:checked~.sidebar ul li a i {
+        padding-right: 5%;
+    }
+    label #cancel {
+        font-size: 90px;
+        padding-left: 40%;
+        margin-top: 2.5%;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s 2s, opacity 0.5s;
+    }
+    label #btn {
+        font-size: 100px;
+        transition: 0.5s;
+    }
+    label #btn {
+        z-index: 1;
+    }
+    #icons:checked~.sidebar {
+        width: 0%;
+        display: none;
+    }
+    #check:checked~label #btn {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 2s linear;
+    }
+    #check:checked~label #cancel {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 2s linear;
+        /* padding-left: -65%; */
+    }
+    #check:checked~label #cancel {
+        padding-left: -65%;
+    }
+    #home-icon:checked~.sidebar {
+        visibility: hidden;
+        width: 0%;
+    }
+    .card {
+        width: 100%;
+        margin: 0%;
+        margin-top: 25%;
+    }
+    .card-desc {
+        font-size: 40px;
+        width: 335px;
+    }
+    .social-icons {
+        font-size: 50px;
+    }
+    #check:checked~section {
+        margin-left: 0;
+        /* width: 230vh; */
+    }
+    footer {
+        font-size: 40px;
+        height: 50vh;
+        margin-bottom: -5%;
+    }
+    .projects-card-wild-cats h1 {
+        font-size: 75px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 20%;
+        color: white;
+    }
+    .projects-card-moon h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .projects-card-birthday h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .projects-card-word h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .sidebar ul a img {
+        width: 350px;
+        height: 135px;
+        visibility: hidden;
+        /* padding-top: 50%; */
+    }
+    #check:checked~.sidebar ul a img {
+        visibility: visible;
+    }
+}
+
+@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 3) {
+    .projects h1 {
+        font-size: 75px;
+    }
+    .projects-card {
+        width: 100%;
+        margin: 5%;
+    }
+    .python-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .python-progress-bar-fill {
+        height: 45px;
+    }
+    .pygame-zero-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .pygame-zero-progress-bar-fill {
+        height: 45px;
+    }
+    .web-dev-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .web-dev-progress-bar-fill {
+        height: 45px;
+    }
+    .flask-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .flask-progress-bar-fill {
+        height: 45px;
+    }
+    .database-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .database-progress-bar-fill {
+        height: 45px;
+    }
+    .about-me-container {
+        display: flex;
+        line-height: 50px;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-flow: wrap;
+    }
+    .about-me-container h1 {
+        font-size: 75px;
+    }
+    .about-me-desc {
+        width: 100%;
+        font-size: 40px;
+    }
+    .about-me-skills {
+        width: 100%;
+        font-size: 40px;
+        font-weight: bolder;
+    }
+    .sidebar {
+        z-index: 1;
+        /* width: 100%; */
+    }
+    #check:checked~.sidebar {
+        width: 75%;
+    }
+    #check:checked~.sidebar header {
+        margin-top: 7.5%;
+        font-size: 50px;
+    }
+    #check:checked~.sidebar ul {
+        margin: 5%;
+    }
+    #check:checked~.sidebar ul li a {
+        font-size: 50px;
+        margin: 25%;
+    }
+    #check:checked~.sidebar ul li a i {
+        padding-right: 5%;
+    }
+    label #cancel {
+        font-size: 90px;
+        padding-left: 40%;
+        margin-top: 2.5%;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s 2s, opacity 0.5s;
+    }
+    label #btn {
+        font-size: 100px;
+        transition: 0.5s;
+    }
+    label #btn {
+        z-index: 1;
+    }
+    #icons:checked~.sidebar {
+        width: 0%;
+        display: none;
+    }
+    #check:checked~label #btn {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 2s linear;
+    }
+    #check:checked~label #cancel {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 2s linear;
+        /* padding-left: -65%; */
+    }
+    #check:checked~label #cancel {
+        padding-left: -65%;
+    }
+    #home-icon:checked~.sidebar {
+        visibility: hidden;
+        width: 0%;
+    }
+    .card {
+        width: 100%;
+        margin: 0%;
+        margin-top: 25%;
+    }
+    .card-desc {
+        font-size: 40px;
+        width: 335px;
+    }
+    .social-icons {
+        font-size: 50px;
+    }
+    #check:checked~section {
+        margin-left: 0;
+        /* width: 230vh; */
+    }
+    footer {
+        font-size: 40px;
+        height: 50vh;
+        margin-bottom: -5%;
+    }
+    .projects-card-wild-cats h1 {
+        font-size: 75px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 20%;
+        color: white;
+    }
+    .projects-card-moon h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .projects-card-birthday h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .projects-card-word h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .sidebar ul a img {
+        width: 350px;
+        height: 135px;
+        visibility: hidden;
+        /* padding-top: 50%; */
+    }
+    #check:checked~.sidebar ul a img {
+        visibility: visible;
+    }
+}
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    .projects h1 {
+        font-size: 75px;
+    }
+    .projects-card {
+        width: 100%;
+        margin: 5%;
+    }
+    .python-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .python-progress-bar-fill {
+        height: 45px;
+    }
+    .pygame-zero-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .pygame-zero-progress-bar-fill {
+        height: 45px;
+    }
+    .web-dev-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .web-dev-progress-bar-fill {
+        height: 45px;
+    }
+    .flask-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .flask-progress-bar-fill {
+        height: 45px;
+    }
+    .database-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .database-progress-bar-fill {
+        height: 45px;
+    }
+    .about-me-container {
+        display: flex;
+        line-height: 50px;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-flow: wrap;
+    }
+    .about-me-container h1 {
+        font-size: 75px;
+    }
+    .about-me-desc {
+        width: 100%;
+        font-size: 40px;
+    }
+    .about-me-skills {
+        width: 100%;
+        font-size: 40px;
+        font-weight: bolder;
+    }
+    .sidebar {
+        z-index: 1;
+        /* width: 100%; */
+    }
+    #check:checked~.sidebar {
+        width: 75%;
+    }
+    #check:checked~.sidebar header {
+        margin-top: 7.5%;
+        font-size: 50px;
+    }
+    #check:checked~.sidebar ul {
+        margin: 5%;
+    }
+    #check:checked~.sidebar ul li a {
+        font-size: 50px;
+        margin: 25%;
+    }
+    #check:checked~.sidebar ul li a i {
+        padding-right: 5%;
+    }
+    label #cancel {
+        font-size: 90px;
+        padding-left: 40%;
+        margin-top: 2.5%;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s 2s, opacity 0.5s;
+    }
+    label #btn {
+        font-size: 100px;
+        transition: 0.5s;
+    }
+    label #btn {
+        z-index: 1;
+    }
+    #icons:checked~.sidebar {
+        width: 0%;
+        display: none;
+    }
+    #check:checked~label #btn {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 2s linear;
+    }
+    #check:checked~label #cancel {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 2s linear;
+        /* padding-left: -65%; */
+    }
+    #check:checked~label #cancel {
+        padding-left: -65%;
+    }
+    #home-icon:checked~.sidebar {
+        visibility: hidden;
+        width: 0%;
+    }
+    .card {
+        width: 100%;
+        margin: 0%;
+        margin-top: 25%;
+    }
+    .card-desc {
+        font-size: 40px;
+        width: 335px;
+    }
+    .social-icons {
+        font-size: 50px;
+    }
+    #check:checked~section {
+        margin-left: 0;
+        /* width: 230vh; */
+    }
+    footer {
+        font-size: 40px;
+        height: 50vh;
+        margin-bottom: -5%;
+    }
+    .projects-card-wild-cats h1 {
+        font-size: 75px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 20%;
+        color: white;
+    }
+    .projects-card-moon h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .projects-card-birthday h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .projects-card-word h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .sidebar ul a img {
+        width: 350px;
+        height: 135px;
+        visibility: hidden;
+        /* padding-top: 50%; */
+    }
+    #check:checked~.sidebar ul a img {
+        visibility: visible;
+    }
+}
+
+@media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
+    .projects h1 {
+        font-size: 75px;
+    }
+    .projects-card {
+        width: 100%;
+        margin: 5%;
+    }
+    .python-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .python-progress-bar-fill {
+        height: 45px;
+    }
+    .pygame-zero-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .pygame-zero-progress-bar-fill {
+        height: 45px;
+    }
+    .web-dev-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .web-dev-progress-bar-fill {
+        height: 45px;
+    }
+    .flask-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .flask-progress-bar-fill {
+        height: 45px;
+    }
+    .database-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .database-progress-bar-fill {
+        height: 45px;
+    }
+    .about-me-container {
+        display: flex;
+        line-height: 50px;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-flow: wrap;
+    }
+    .about-me-container h1 {
+        font-size: 75px;
+    }
+    .about-me-desc {
+        width: 100%;
+        font-size: 40px;
+    }
+    .about-me-skills {
+        width: 100%;
+        font-size: 40px;
+        font-weight: bolder;
+    }
+    .sidebar {
+        z-index: 1;
+        /* width: 100%; */
+    }
+    #check:checked~.sidebar {
+        width: 75%;
+    }
+    #check:checked~.sidebar header {
+        margin-top: 7.5%;
+        font-size: 50px;
+    }
+    #check:checked~.sidebar ul {
+        margin: 5%;
+    }
+    #check:checked~.sidebar ul li a {
+        font-size: 50px;
+        margin: 25%;
+    }
+    #check:checked~.sidebar ul li a i {
+        padding-right: 5%;
+    }
+    label #cancel {
+        font-size: 90px;
+        padding-left: 40%;
+        margin-top: 2.5%;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s 2s, opacity 0.5s;
+    }
+    label #btn {
+        font-size: 100px;
+        transition: 0.5s;
+    }
+    label #btn {
+        z-index: 1;
+    }
+    #icons:checked~.sidebar {
+        width: 0%;
+        display: none;
+    }
+    #check:checked~label #btn {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 2s linear;
+    }
+    #check:checked~label #cancel {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 2s linear;
+        /* padding-left: -65%; */
+    }
+    #check:checked~label #cancel {
+        padding-left: -65%;
+    }
+    #home-icon:checked~.sidebar {
+        visibility: hidden;
+        width: 0%;
+    }
+    .card {
+        width: 100%;
+        margin: 0%;
+        margin-top: 25%;
+    }
+    .card-desc {
+        font-size: 40px;
+        width: 335px;
+    }
+    .social-icons {
+        font-size: 50px;
+    }
+    #check:checked~section {
+        margin-left: 0;
+        /* width: 230vh; */
+    }
+    footer {
+        font-size: 40px;
+        height: 50vh;
+        margin-bottom: -5%;
+    }
+    .projects-card-wild-cats h1 {
+        font-size: 75px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 20%;
+        color: white;
+    }
+    .projects-card-moon h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .projects-card-birthday h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .projects-card-word h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .sidebar ul a img {
+        width: 350px;
+        height: 135px;
+        visibility: hidden;
+        /* padding-top: 50%; */
+    }
+    #check:checked~.sidebar ul a img {
+        visibility: visible;
+    }
+}
+
+@media only screen and (device-width: 480px) and (device-height: 800px) and (-webkit-device-pixel-ratio: 3) {
+    .projects h1 {
+        font-size: 75px;
+    }
+    .projects-card {
+        width: 100%;
+        margin: 5%;
+    }
+    .python-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .python-progress-bar-fill {
+        height: 45px;
+    }
+    .pygame-zero-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .pygame-zero-progress-bar-fill {
+        height: 45px;
+    }
+    .web-dev-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .web-dev-progress-bar-fill {
+        height: 45px;
+    }
+    .flask-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .flask-progress-bar-fill {
+        height: 45px;
+    }
+    .database-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .database-progress-bar-fill {
+        height: 45px;
+    }
+    .about-me-container {
+        display: flex;
+        line-height: 50px;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-flow: wrap;
+    }
+    .about-me-container h1 {
+        font-size: 75px;
+    }
+    .about-me-desc {
+        width: 100%;
+        font-size: 40px;
+    }
+    .about-me-skills {
+        width: 100%;
+        font-size: 40px;
+        font-weight: bolder;
+    }
+    .sidebar {
+        z-index: 1;
+        /* width: 100%; */
+    }
+    #check:checked~.sidebar {
+        width: 75%;
+    }
+    #check:checked~.sidebar header {
+        margin-top: 7.5%;
+        font-size: 50px;
+    }
+    #check:checked~.sidebar ul {
+        margin: 5%;
+    }
+    #check:checked~.sidebar ul li a {
+        font-size: 50px;
+        margin: 25%;
+    }
+    #check:checked~.sidebar ul li a i {
+        padding-right: 5%;
+    }
+    label #cancel {
+        font-size: 90px;
+        padding-left: 40%;
+        margin-top: 2.5%;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s 2s, opacity 0.5s;
+    }
+    label #btn {
+        font-size: 100px;
+        transition: 0.5s;
+    }
+    label #btn {
+        z-index: 1;
+    }
+    #icons:checked~.sidebar {
+        width: 0%;
+        display: none;
+    }
+    #check:checked~label #btn {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 2s linear;
+    }
+    #check:checked~label #cancel {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 2s linear;
+        /* padding-left: -65%; */
+    }
+    #check:checked~label #cancel {
+        padding-left: -65%;
+    }
+    #home-icon:checked~.sidebar {
+        visibility: hidden;
+        width: 0%;
+    }
+    .card {
+        width: 100%;
+        margin: 0%;
+        margin-top: 25%;
+    }
+    .card-desc {
+        font-size: 40px;
+        width: 335px;
+    }
+    .social-icons {
+        font-size: 50px;
+    }
+    #check:checked~section {
+        margin-left: 0;
+        /* width: 230vh; */
+    }
+    footer {
+        font-size: 40px;
+        height: 50vh;
+        margin-bottom: -5%;
+    }
+    .projects-card-wild-cats h1 {
+        font-size: 75px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 20%;
+        color: white;
+    }
+    .projects-card-moon h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .projects-card-birthday h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .projects-card-word h1 {
+        font-size: 60px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .sidebar ul a img {
+        width: 350px;
+        height: 135px;
+        visibility: hidden;
+        /* padding-top: 50%; */
+    }
+    #check:checked~.sidebar ul a img {
+        visibility: visible;
+    }
+}
+
+@keyframes text-letter-spacing {
+    0% {
+        letter-spacing: 0px;
+    }
+    50% {
+        letter-spacing: 6px;
+    }
+    100% {
+        letter-spacing: 1px;
+    }
+}
