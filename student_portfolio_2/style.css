@@ -29,7 +29,7 @@ h1 {
     /* width: 100%; */
     height: 100%;
     transition: all .5s ease;
-    background-color: black;
+    background-color: rgb(36, 36, 36);
 }
 
 .sidebar header {
@@ -37,7 +37,7 @@ h1 {
     color: white;
     line-height: 70px;
     text-align: center;
-    background: black;
+    background-color: rgb(36, 36, 36);
     user-select: none;
 }
 
@@ -148,10 +148,10 @@ section {
 
 .card {
     background-color: white;
-    height: 50%;
-    width: 50%;
+    height: 60%;
+    width: 60%;
     margin: 10%;
-    margin-left: 25%;
+    margin-left: 20%;
     position: absolute;
     display: flex;
     box-shadow: 10px 10px 36px -17px rgba(0, 0, 0, 0.75);
@@ -172,9 +172,29 @@ section {
 
 .card-desc {
     margin: 25%;
-    padding-left: 100%;
+    padding-left: 95%;
     padding-right: 0;
     width: 50%;
+}
+
+.card-desc p {
+    line-height: 150%;
+    width: 150%;
+}
+
+.home-logo img {
+    width: 5%;
+    height: 10%;
+    /* display: none; */
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
 }
 
 .about-me-container {
@@ -286,6 +306,7 @@ section {
 
 .projects {
     margin-bottom: 2.5%;
+    height: 100%;
 }
 
 .projects h1 {
@@ -306,6 +327,7 @@ section {
 .projects-card {
     width: 20%;
     height: 300px;
+    margin: 2%;
     background-color: yellow;
     box-sizing: border-box;
     /* font-size: 60px; */
@@ -473,6 +495,12 @@ footer {
     text-decoration: underline;
 }
 
+.link-box {
+    border: 1px solid white;
+    padding: 5%;
+    margin: 5%;
+}
+
 @media only screen and (max-width: 600px) {
     .projects h1 {
         font-size: 75px;
@@ -571,9 +599,8 @@ footer {
     label #btn {
         z-index: 1;
     }
-    #icons:checked~.sidebar {
-        width: 0%;
-        display: none;
+    .home-logo img {
+        width: 159px;
     }
     #check:checked~label #btn {
         visibility: visible;
@@ -1272,6 +1299,9 @@ footer {
         width: 100%;
         font-size: 40px;
     }
+    .home-logo img {
+        width: 159px;
+    }
     .about-me-skills {
         width: 100%;
         font-size: 40px;
@@ -1344,6 +1374,10 @@ footer {
         font-size: 40px;
         width: 335px;
     }
+    .card-desc p {
+        width: 100%;
+        font-size: 35px;
+    }
     .social-icons {
         font-size: 50px;
     }
@@ -1355,6 +1389,12 @@ footer {
         font-size: 40px;
         height: 50vh;
         margin-bottom: -5%;
+    }
+    .projects {
+        height: 100%;
+    }
+    .projects-card {
+        margin: 2%;
     }
     .projects-card-wild-cats h1 {
         font-size: 75px !important;
@@ -1396,6 +1436,15 @@ footer {
     }
     #check:checked~.sidebar ul a img {
         visibility: visible;
+    }
+    .footer-content {
+        margin: 0;
+        margin-left: 5%;
+    }
+    .link-box {
+        margin: 0;
+        margin-top: 5%;
+        padding: 2%;
     }
 }
 
