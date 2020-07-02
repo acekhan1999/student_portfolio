@@ -511,13 +511,13 @@ footer {
 }
 
 .link-box:hover {
-    padding-top: 15px;
+    /* padding-top: 15px;
     padding-bottom: 25px;
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 20px; */
     background-color: rgb(31, 31, 31);
     color: white;
-    font-size: 17px;
+    font-weight: bolder;
 }
 
 @media only screen and (max-width: 600px) {
