@@ -1,92 +1,253 @@
-@media only screen and (max-width: 600px) {
-    .sidebar {
-        position: fixed;
-        left: -250px;
-        width: 250px;
-        /* width: 100%; */
-        height: 100%;
-        transition: all .5s ease;
-        background-color: black;
+@media only screen and (max-width:600px) {
+    body {
+        overflow-x: hidden;
     }
-    .sidebar header {
-        font-size: 22px;
-        color: white;
-        line-height: 70px;
-        text-align: center;
-        background: black;
-        user-select: none;
-    }
-    .sidebar ul a {
-        display: block;
-        height: 100%;
+    section {
         width: 100%;
-        line-height: 65px;
-        font-size: 15px;
-        color: white;
-        padding-left: 40px;
-        box-sizing: border-box;
-        /* border-bottom: 1px solid black; */
-        /* border-top: 1px solid rgba(255, 255, 255, .1); */
-        transition: .4s;
     }
-    .sidebar ul li:hover a {
-        padding-left: 50px;
+    .home {
+        width: 110%;
     }
-    .sidebar ul a i {
-        margin-right: 16px;
+    .card {
+        width: 110% !important;
     }
-    .sidebar ul a img {
-        width: 150px;
-        height: 65px;
-        padding-top: 50%;
+    .projects h1 {
+        font-size: 20px;
     }
-    #check {
-        display: none;
+    .projects-card {
+        width: 100%;
+        margin: 5%;
     }
-    label #btn,
-    label #cancel {
-        position: absolute;
-        border-radius: 3px;
-        cursor: pointer;
+    .python-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
     }
-    label #btn {
-        left: 40px;
-        top: 25px;
-        font-size: 35px;
-        color: white;
-        padding: 6px 12px;
-        transition: all .5s;
-        position: fixed;
+    .python-progress-bar-fill {
+        height: 45px;
     }
-    label #cancel {
-        z-index: 1111;
-        left: -195px;
-        top: 17px;
-        font-size: 30px;
-        color: white;
-        padding: 4px 9px;
-        transition: all .5s ease;
-        position: fixed;
+    .pygame-zero-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .pygame-zero-progress-bar-fill {
+        height: 45px;
+    }
+    .web-dev-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .web-dev-progress-bar-fill {
+        height: 45px;
+    }
+    .flask-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .flask-progress-bar-fill {
+        height: 45px;
+    }
+    .database-progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+    }
+    .database-progress-bar-fill {
+        height: 45px;
+    }
+    .about-me {
+        height: 100%;
+        margin-bottom: 5%;
+    }
+    .about-me-container {
+        display: flex;
+        line-height: 50px;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-flow: wrap;
+    }
+    .about-me-container h1 {
+        font-size: 75px;
+    }
+    .about-me-desc {
+        width: 100%;
+        font-size: 18px;
+    }
+    .about-me-desc h1 {
+        font-size: 20px;
+    }
+    .home-logo img {
+        width: 159px;
+    }
+    .about-me-skills {
+        width: 100%;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    .sidebar {
+        z-index: 1;
+        /* width: 100%; */
     }
     #check:checked~.sidebar {
-        left: 0;
+        width: 75%;
+    }
+    #check:checked~.sidebar header {
+        margin-top: 7.5%;
+        font-size: 20px;
+    }
+    #check:checked~.sidebar ul {
+        margin: 5%;
+    }
+    #check:checked~.sidebar ul li a {
+        font-size: 20px;
+        margin: 10%;
+    }
+    #check:checked~.sidebar ul li a i {
+        padding-right: 5%;
+    }
+    label #cancel {
+        font-size: 40px;
+        padding-left: 20%;
+        margin-top: 3.5%;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s 2s, opacity 0.5s;
+    }
+    label #btn {
+        font-size: 40px;
+        transition: 0.5s;
+    }
+    label #btn {
+        z-index: 1;
+    }
+    #icons:checked~.sidebar {
+        width: 0%;
+        display: none;
     }
     #check:checked~label #btn {
-        /* left: 250px; */
-        opacity: 0;
-        pointer-events: none;
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 2s linear;
     }
     #check:checked~label #cancel {
-        left: 195px;
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 2s linear;
+        /* padding-left: -65%; */
+    }
+    #check:checked~label #cancel {
+        padding-left: -65%;
+    }
+    #home-icon:checked~.sidebar {
+        visibility: hidden;
+        width: 0%;
+    }
+    .card {
+        width: 100%;
+        margin: 0%;
+        margin-top: 25%;
+        height: 60%;
+    }
+    .card-desc {
+        font-size: 15px;
+        width: 100%;
+        margin-left: 25px;
+    }
+    .card-desc p {
+        width: 100%;
+        font-size: 35px;
+    }
+    .social-icons {
+        font-size: 20px;
     }
     #check:checked~section {
-        margin-left: 250px;
+        margin-left: 0;
         /* width: 230vh; */
     }
-}
-
-@media screen and (max-width:1200px) {
+    footer {
+        font-size: 20px;
+        height: 100%;
+        margin-bottom: -5%;
+        width: 110%;
+    }
+    .projects {
+        height: 100%;
+    }
+    .projects-card h1 {
+        font-size: 20px;
+    }
     .projects-card {
-        width: 40%;
+        margin: 2%;
+    }
+    .projects-card-wild-cats h1 {
+        font-size: 30px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 20%;
+        color: white;
+    }
+    .projects-card-moon h1 {
+        font-size: 30px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .projects-card-birthday h1 {
+        font-size: 30px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .projects-card-word h1 {
+        font-size: 30px !important;
+        visibility: visible;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        padding: 10%;
+        color: white;
+    }
+    .sidebar ul a img {
+        width: 350px;
+        height: 135px;
+        visibility: hidden;
+        /* padding-top: 50%; */
+    }
+    #check:checked~.sidebar ul a img {
+        visibility: visible;
+    }
+    .footer-content {
+        margin: 0;
+        margin-left: 5%;
+    }
+    .link-box {
+        margin: 0;
+        margin-top: 5%;
+        padding: 2%;
+        width: 50%;
+        padding-bottom: 50px;
+        padding-left: 50px;
+    }
+    .python-progress-bar {
+        width: 100%;
+        margin-left: -20px;
+    }
+    .pygame-zero-progress-bar {
+        width: 100%;
+        margin-left: -20px;
+    }
+    .web-dev-progress-bar {
+        width: 100%;
+        margin-left: -20px;
+    }
+    .flask-progress-bar {
+        width: 100%;
+        margin-left: -20px;
+    }
+    .database-progress-bar {
+        width: 100%;
+        margin-left: -20px;
     }
 }
