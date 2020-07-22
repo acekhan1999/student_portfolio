@@ -6,10 +6,10 @@
         width: 100%;
     }
     .home {
-        width: 110%;
+        width: 100%;
     }
     .card {
-        width: 110% !important;
+        width: 100% !important;
     }
     .projects h1 {
         font-size: 20px;
