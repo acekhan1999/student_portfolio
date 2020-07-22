@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>John Doe</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mobile_responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fa fa-bars" id="btn"></i>
+      <i class="fa fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+        <div class="sidebar-content">
+            <header>John Doe</header>
+            <div id="icons">
+                <ul>
+                    <li><a id="home-icon" href="#home"><i class="fa fa-home" ></i>Home</a></li>
+                    <li><a id="user-icon" href="#about-me"><i class="fa fa-user" ></i>About Me</a></li>
+                    <li><a id="tasks-icon" href="#projects"><i class="fa fa-tasks" ></i>Projects</a></li>
+                    <!-- <li>
+                        <a href="https://www.penroselearning.com/"><img src="https://static1.squarespace.com/static/5c83dafbd7819e5f5559e500/t/5ef6402f6ad4cb3b5272886d/1593337661939/?format=1500w" alt=""></a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="home"></div>
+    <section class="home">
+        <div class="card">
+            <div class="card-image ">
+                <div class="card-desc ">
+                    <h1>John Doe</h1>
+                    <ul>
+                        <li>Python Developer</li>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="about-me"></div>
+    <section class="about-me ">
+        <div class="about-me-container ">
+            <div class="about-me-desc ">
+                <h1>about me</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis asperiores qui ipsa, error sint voluptatem vel facere impedit, reprehenderit dolorem, magni unde ducimus repellat doloribus. Dolor qui sapiente nobis ut!</p>
+            </div>
+            <div class="about-me-skills ">
+                <ul>
+                    <li>Python</li>
+                    <li>
+                        <div class="python-progress-bar ">
+                            <span class="python-progress-bar-fill " style="width: 100%; "></span>
+                        </div>
+                    </li>
+                    <li>PyGame Zero</li>
+                    <li>
+                        <div class="pygame-zero-progress-bar ">
+                            <span class="pygame-zero-progress-bar-fill " style="width: 80%; "></span>
+                        </div>
+                    </li>
+                    <li>Web Developement</li>
+                    <li>
+                        <div class="web-dev-progress-bar ">
+                            <span class="web-dev-progress-bar-fill " style="width: 60%; "></span>
+                        </div>
+                    </li>
+                    <li>Flask Apps</li>
+                    <li>
+                        <div class="flask-progress-bar ">
+                            <span class="flask-progress-bar-fill " style="width: 10%; "></span>
+                        </div>
+                    </li>
+                    <li>Database Handling</li>
+                    <li>
+                        <div class="database-progress-bar ">
+                            <span class="database-progress-bar-fill " style="width: 5%; "></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div id="projects"></div>
+    <section class="projects">
+        <h1>projects</h1>
+        <div class="container">
+            <div class="projects-card">
+                <a href="#">
+                    <div class="projects-card-wild-cats">
+                        <h1>Wild Cats</h1>
+                    </div>
+                </a>
+            </div>
+            <div class="projects-card">
+                <a href="#">
+                    <div class="projects-card-moon">
+                        <h1>Moon Phase Calculator</h1>
+                    </div>
+                </a>
+            </div>
+            <div class="projects-card">
+                <a href="#">
+                    <div class="projects-card-birthday">
+                        <h1>Birthday <br/>Countdown</h1>
+                    </div>
+                </a>
+            </div>
+            <div class="projects-card">
+                <a href="#">
+                    <div class="projects-card-word">
+                        <h1>Word Cookies<br/>Cheat</h1>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <ul>
+                <li>&copy; 2020 PENROSE</li>
+                <li>Website Hosted by Penrose Learning Centre, Dubai, UAE</li>
+                <li>KHDA Approved Training Institute</li>
+                <li><a href="mailto:mentors@penroselearning.com">mentors@penroselearning.com</a></li>
+                <li>
+                    <span><a href="#"><i class="fa fa-instagram"></i></a></span>
+                    <span><a href="#"><i class="fa fa-facebook-f"></i></a></span>
+                    <span><a href="#"><i class="fa fa-twitter"></i></a></span>
+                </li>
+                <li>Learn to Code. Book a Free Demo Today</li>
+                <li>
+                    <a href="https://www.penroselearning.com/" target="_blank"><img src="https://static1.squarespace.com/static/5c83dafbd7819e5f5559e500/t/5ef6402f6ad4cb3b5272886d/1593337661939/?format=1500w" alt=""></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+<script>
+    var nav = document.getElementById('btn');
+
+    window.onscroll = function() {
+        if (window.pageYOffset > 510 && window.pageYOffset < 1950) {
+            nav.style.color = "black";
+        } else {
+            nav.style.color = "white ";
+        }
+    }
+</script>
+
+</html>
