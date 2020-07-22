@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -471,6 +472,110 @@ footer {
 .footer-content li a:hover {
     color: rgb(105, 105, 105);
     text-decoration: underline;
+}
+
+nav {
+    display: block;
+    padding: 10px;
+    margin: 0;
+    padding: 0%;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li a img {
+    width: 200px;
+    float: left;
+}
+
+.back_home {
+    float: right;
+    padding: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 2px;
+    color: rgb(36, 36, 36);
+}
+
+.back_home:hover {
+    letter-spacing: 3px;
+}
+
+a .fa {
+    padding-right: 25px;
+}
+
+.flask-projects {
+    height: 100%;
+    background: linear-gradient(126deg, rgba(255, 255, 255, 1) 0%, rgb(247, 247, 247) 100%);
+    /* width: 100%; */
+}
+
+.flask-projects .container {
+    width: 100%;
+    height: auto;
+    /* background: #007bbf; */
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.flask-projects .box {
+    width: 20%;
+    height: 300px;
+    background-color: yellow;
+    margin: 20px;
+    box-sizing: border-box;
+    font-size: 50px;
+}
+
+.flask-projects .box:nth-child(1) {
+    background: url(https://static1.squarespace.com/static/5c83dafbd7819e5f5559e500/5edf4e5b88a70e79f15f43e9/5ee48ae72fe2c41cdedfbcd8/1592723434179/Blog+Thumbnails+%285%29.png?format=500w) no-repeat center center/cover;
+}
+
+.flask-projects .box:nth-child(2) {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://static1.squarespace.com/static/5c83dafbd7819e5f5559e500/5edf4e5b88a70e79f15f43e9/5ed7e6782c7a68200474297a/1592723450786/aspect_ratio.png?format=500w) no-repeat center center/cover;
+}
+
+.flask-projects .box:nth-child(3) {
+    background: url(https://static1.squarespace.com/static/5c83dafbd7819e5f5559e500/5edf4e5b88a70e79f15f43e9/5ed7e6505d3bdd06806159c7/1592723468627/convert_to_seconds.png?format=500w) no-repeat center center/cover;
+}
+
+.flask-projects .box:nth-child(4) {
+    background: url(https://static1.squarespace.com/static/5c83dafbd7819e5f5559e500/5edf4e5b88a70e79f15f43e9/5ed7e5cd5b35216c3f6665f6/1592723484785/birthday_countdown.png?format=500w) no-repeat center center/cover;
+}
+
+.flask-projects .box:nth-child(5) {
+    background: linear-gradient( rgba(0, 0, 0, 0.164), rgba(0, 0, 0, 0.164)), url(https://static1.squarespace.com/static/5c83dafbd7819e5f5559e500/5edf4e5b88a70e79f15f43e9/5ed7e59e060f084fb66c229f/1592723504665/count_the_vowels.png?format=500w) no-repeat center center/cover;
+}
+
+.flask-projects .box:nth-child(6) {
+    background: linear-gradient( rgba(0, 0, 0, 0.164), rgba(0, 0, 0, 0.164)), url(https://static1.squarespace.com/static/5c83dafbd7819e5f5559e500/5edf4e5b88a70e79f15f43e9/5ed6a8383065d667d1ee6c81/1592723520395/Blog+Thumbnails+%288%29.png?format=500w) no-repeat center center/cover;
+}
+
+.flask-projects .box:nth-child(7) {
+    background: url(https://static1.squarespace.com/static/5c83dafbd7819e5f5559e500/5edf4e5b88a70e79f15f43e9/5ed64c1ab61798137c9b34d8/1592723534672/Blog+Thumbnails+%287%29.png?format=500w) no-repeat center center/cover;
+}
+
+.flask-projects .box:nth-child(8) {
+    background: url(https://static1.squarespace.com/static/5c83dafbd7819e5f5559e500/5edf4e5b88a70e79f15f43e9/5ec3e7a01a764f0c6a3b1624/1592723549375/Blog+Thumbnails+%284%29.png?format=500w) no-repeat center center/cover;
+}
+
+.flask-projects .box h1 {
+    color: white;
+    font-size: 50px;
+    letter-spacing: 3px;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+
+.mt-text {
+    font-size: 45px !important;
 }
 
 @keyframes text-letter-spacing {

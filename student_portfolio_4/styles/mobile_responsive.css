@@ -251,3 +251,15 @@
         margin-left: -20px;
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .flask-projects .box {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .flask-projects .box {
+        width: 100%;
+    }
+}
