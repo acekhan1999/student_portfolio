@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/mobile_responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Flask Apps</title>
 </head>
 
@@ -23,13 +24,13 @@
     </nav>
     <section class="flask-projects">
         <div class="container">
-            <a href="#" class="box">
+            <a href="#popup1" class="box">
                 <h1>wild cats</h1>
             </a>
-            <a href="#" class="box">
+            <a href="#popup2" class="box">
                 <h1 class="arc">Aspect Ratio Calculator</h1>
             </a>
-            <a href="#" class="box">
+            <a href="#popup3" class="box">
                 <h1 class="">convert to seconds</h1>
             </a>
             <a href="#" class="box">
@@ -47,6 +48,71 @@
             <a href="#" class="box">
                 <h1 class="">Word Cookies Cheat App</h1>
             </a>
+        </div>
+
+        <!-- Pop-Ups -->
+
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>wild cats</h2>
+                <a class="close" href="#">&times;</a>
+                <hr>
+                <div class="content">
+                    <select name="wild_cats" id="wild_cats">
+                        <option value="#">--Select Option--</option>
+                        <option value="tiger">Tiger</option>
+                        <option value="lion">Lion</option>
+                    </select>
+                    <input type="submit" value="Click Me">
+                    <h2>Tiger</h2>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg/330px-Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg" alt="tiger">
+                    <ul>
+                        <li><strong>Scientific Name: </strong>Panthera Tigris</li>
+                        <li><strong>Regions Found: </strong>Asia, Southeast Asia, Russia, Indonesia</li>
+                        <li><strong>Natural Habitat: </strong>forest, Jungle, woodland, Swamp, grassland, Savanna</li>
+                        <li><strong>Max Length: </strong>13 feet</li>
+                        <li><strong>Max Height: </strong>120 cm</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="popup2" class="overlay">
+            <div class="popup">
+                <h2>aspect ratio calculator</h2>
+                <a class="close" href="#">&times;</a>
+                <hr>
+                <div class="content">
+                    <label for="org_width">Original Width</label>
+                    <input type="number" name="org_width" id="org_width"><br/>
+                    <label for="org_height">Original Height</label>
+                    <input type="number" name="org_height" id="org_height"><br/>
+                    <label for="new_width">New Width</label>
+                    <input type="number" name="new_width" id="new_width"><br/>
+                    <label for="new_height">New Height</label>
+                    <input type="number" name="new_height" id="new_height"><br/>
+                    <input type="submit" value="Click here"><br/>
+                    <strong>The Width to Height ration is 3 : 2</strong><br/>
+                    <div class="ratio-box" style="width: 100px; height: 200px; border: 2px solid black;"></div>
+                </div>
+            </div>
+        </div>
+        <div id="popup3" class="overlay">
+            <div class="popup">
+                <h2>Convert to seconds</h2>
+                <a class="close" href="#">&times;</a>
+                <hr>
+                <div class="content">
+                    <input type="number" name="years" id="years" placeholder="years">
+                    <input type="number" name="months" id="months" placeholder="months">
+                    <input type="number" name="weeks" id="weeks" placeholder="weeks">
+                    <input type="number" name="days" id="days" placeholder="days">
+                    <input type="number" name="hours" id="hours" placeholder="hours">
+                    <input type="number" name="minutes" id="minutes" placeholder="minutes">
+                    <input type="submit" value="Click Here"><br/>
+                    <strong>1 year(s), 1 month(s), 1 week(s), 1 day(s), 1 hour(s), 1 minute(s)
+                        <br/><span>TOTAL: 50,288,460 seconds</span></strong>
+                </div>
+            </div>
         </div>
     </section>
 </body>

@@ -7,6 +7,7 @@
     list-style: none;
     text-decoration: none;
     scroll-behavior: smooth;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 body {
@@ -532,6 +533,106 @@ a .fa {
     margin: 20px;
     box-sizing: border-box;
     font-size: 50px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.popup .close {
+    position: absolute;
+    top: 17.5px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: #0522a1;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+    text-align: center;
+}
+
+.popup .content select {
+    margin: 3%;
+    width: 92.5%;
+    border-radius: 2%;
+    padding: 10px 15px;
+}
+
+.popup .content input[type="submit"] {
+    padding: 10px 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 5%;
+}
+
+.overlay {
+    overflow-y: auto;
+    height: 100%;
+}
+
+#popup2 .popup .content {
+    text-align: center;
+}
+
+#popup2 .popup .content input[type="number"] {
+    margin: 2.5%;
+    padding: 10px 15px;
+}
+
+#popup3 .popup .content input[type="number"] {
+    margin: 2.5%;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.ratio-box {
+    margin-top: 5%;
+    /* margin-left: 15%; */
+}
+
+strong span {
+    color: red;
 }
 
 .flask-projects .box:nth-child(1) {

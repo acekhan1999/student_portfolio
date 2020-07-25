@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+</head>
+<style>
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    .wild-cats-modal {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 99999;
+        opacity: 0;
+        -webkit-transition: opacity 100ms ease-in;
+        -moz-transition: opacity 100ms ease-in;
+        transition: opacity 100ms ease-in;
+        pointer-events: none;
+    }
+    
+    .wild-cats-modal:target {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    
+    .wild-cats-modal>div {
+        max-width: 800px;
+        width: 90%;
+        position: relative;
+        margin: 10% auto;
+        padding: 20px;
+        border-radius: 3px;
+        background: #fff;
+    }
+    
+    .wild-cats-modal>div {
+        text-align: center;
+    }
+    
+    .wild-cats-modal>div select {
+        width: 50%;
+        padding: 10px 15px;
+    }
+    
+    .close {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f26d7d;
+        color: #fff;
+        line-height: 25px;
+        position: absolute;
+        right: -12px;
+        text-align: center;
+        top: -10px;
+        width: 34px;
+        height: 34px;
+        text-decoration: none;
+        font-weight: bold;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        -moz-box-shadow: 1px 1px 3px #000;
+        -webkit-box-shadow: 1px 1px 3px #000;
+        box-shadow: 1px 1px 3px #000;
+        padding-top: 5px;
+    }
+    
+    .close:hover {
+        background: #fa3f6f;
+    }
+</style>
+
+<body>
+    <a href="#wild-cats-modal">Modal</a>
+    <!--modals-->
+    <div id="wild-cats-modal" class="wild-cats-modal">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <h1>Wild Cats</h1>
+            <select name="" id="">
+                <option value="">--Select Option--</option>
+                <option value="Tiger">Tiger</option>
+                <option value="Lion">Cheetah</option>
+                <option value="Leapord">Leapord</option>
+            </select>
+        </div>
+    </div>
+</body>
+
+</html>

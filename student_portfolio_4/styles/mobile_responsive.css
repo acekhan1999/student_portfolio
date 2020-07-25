@@ -262,4 +262,13 @@
     .flask-projects .box {
         width: 100%;
     }
+    nav li {
+        padding: 0;
+        width: 100%;
+    }
+    .popup {
+        margin: 0;
+        margin-top: 25%;
+        width: 80%;
+    }
 }
