@@ -605,9 +605,18 @@ a .fa {
     margin: 5%;
 }
 
+.popup .content input::placeholder {
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
 .overlay {
     overflow-y: auto;
     height: 100%;
+}
+
+.popup input {
+    padding: 10px 15px;
 }
 
 #popup2 .popup .content {
@@ -624,6 +633,51 @@ a .fa {
     padding: 10px 15px;
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+
+#popup4 .popup span {
+    text-decoration: underline;
+    font-weight: bolder;
+    /* text-transform: capitalize; */
+}
+
+#popup4 .popup h3 {
+    text-transform: capitalize;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#popup5 .popup td {
+    padding: 5px 10px;
+}
+
+#popup7 .popup .content {
+    margin-top: 3%;
+}
+
+#popup7 .popup .content img {
+    margin-top: 3%;
+    border-radius: 100%;
+}
+
+#popup8 .popup h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    margin-top: 5%;
+}
+
+#popup8 .popup strong {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#popup8 .popup p {
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
 }
 
 .ratio-box {
