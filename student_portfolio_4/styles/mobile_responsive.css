@@ -256,6 +256,9 @@
     .flask-projects .box {
         width: 40%;
     }
+    .projects .container .box {
+        width: 40%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -270,5 +273,8 @@
         margin: 0;
         margin-top: 25%;
         width: 85%;
+    }
+    .projects .container .box {
+        width: 100%;
     }
 }
