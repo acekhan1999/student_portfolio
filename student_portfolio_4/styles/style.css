@@ -458,6 +458,63 @@ a .fa {
     padding-right: 25px;
 }
 
+.pgzero-projects {
+    height: 100%;
+    background: linear-gradient(126deg, rgba(255, 255, 255, 1) 0%, rgb(247, 247, 247) 100%);
+    /* width: 100%; */
+}
+
+.pgzero-projects .container {
+    width: 100%;
+    height: auto;
+    /* background: #007bbf; */
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.pgzero-projects .box {
+    width: 45%;
+    height: 300px;
+    background-color: yellow;
+    margin: 20px;
+    box-sizing: border-box;
+    font-size: 50px;
+}
+
+.pgzero-projects .box h1 {
+    color: white;
+    font-size: 50px;
+    letter-spacing: 3px;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    margin-top: 15%;
+}
+
+.pgzero-projects .box:nth-child(1) {
+    background: url("https://thumbor.forbes.com/thumbor/711x400/https://blogs-images.forbes.com/erikkain/files/2014/06/flappybird1.jpg?width=960") var(--background-pos);
+}
+
+.pgzero-projects .box:nth-child(2) {
+    background: url("https://www.skipser.com/test/trex-game/promotion/trex-chrome-game.png") var(--background-pos);
+}
+
+.pgzero-projects .py-app:nth-child(1) {
+    background: var(--background-linear-gradient) url("https://i.github-camo.com/90b459ceb3d47bf75bf36261152bf99a6f23dc56/68747470733a2f2f6769746875622e636f6d2f6a6163717565786769746875622f707974686f6e2d72756e2d7465726d696e616c6e782f626c6f622f6d61737465722f7265736f75726365732f707265766965772e706e673f7261773d74727565") var(--background-pos);
+}
+
+.content p a {
+    /* font-weight: bolder; */
+    color: blue;
+    transition: 0.5s;
+}
+
+.content p a:hover {
+    text-decoration: underline;
+}
+
 .flask-projects {
     height: 100%;
     background: linear-gradient(126deg, rgba(255, 255, 255, 1) 0%, rgb(247, 247, 247) 100%);
